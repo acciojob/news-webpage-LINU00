@@ -1,16 +1,90 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
+	<title>Basic News Webpage</title>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: #011e29;
+			color: white;
+			text-align: center;
+			padding: 20px;
+		}
+
+		.latest-news-section {
+			background-color: white;
+			width: 80%;
+			margin: 20px auto;
+			padding: 15px;
+			border-radius: 8px;
+		}
+
+		.latest-news-section h2 {
+			margin-bottom: 10px;
+		}
+
+		.latest-news-section ul {
+			list-style-type: disc;
+			padding-left: 20px;
+		}
+
+		.latest-news-section li {
+			margin: 8px 0;
+		}
+
+		.pictorial-news-section {
+			background-color: white;
+			width: 80%;
+			margin: 20px auto;
+			padding: 15px;
+			border-radius: 8px;
+			text-align: center;
+		}
+
+		.pictorial-news-section h2 {
+			margin-bottom: 15px;
+		}
+
+		.pictorial-news-section img {
+			width: 200px;
+			height: 150px;
+			object-fit: cover;
+			margin: 10px;
+			border-radius: 6px;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+	<header class="header">
+		<h1>News Today</h1>
+	</header>
+
+	<div class="latest-news-section">
+		<h2>Latest News</h2>
+		<ul>
+			<li>Breaking: <strong>New technology</strong> reshaping the future of AI.</li>
+			<li>Sports Update: <em>Team A</em> wins the championship finals.</li>
+			<li>Weather Alert: <strong>Heavy rains</strong> expected this weekend.</li>
+		</ul>
+	</div>
+
+	<div class="pictorial-news-section">
+		<h2>Pictorial News</h2>
+		<img src="Image_one" alt="News Image One">
+		<img src="Image_two" alt="News Image Two">
+		<img src="Image_three" alt="News Image Three">
+	</div>
+
+	<script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
